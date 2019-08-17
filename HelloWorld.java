@@ -1,7 +1,9 @@
 public class HelloWorld {
 
     public static void main(String[] args) {
-        System.out.println("Hello, World");
+        PrinterFactory factory = new PrinterFactory();
+        factory.getPrinter(null).print("Hello, World");
+        factory.getPrinter("fancy").print("Hello, World");
     }
 
 }

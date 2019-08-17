@@ -16,7 +16,7 @@ For [the programmerhumor hackathon 2019](https://www.programmerhumor.org/Hackath
 
 - [ ] Abstract Factory
 - [ ] Builder
-- [ ] Factory Method
+- [X] Factory Method
 - [ ] Prototype
 - [ ] Singleton
 - [ ] Adapter
