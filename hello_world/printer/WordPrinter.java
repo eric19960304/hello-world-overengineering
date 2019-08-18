@@ -6,7 +6,7 @@ public class WordPrinter implements Printer {
 
     @Override
     public void print(Printable printable){
-        Word whitespace = (Word) printable;
-        System.out.print(whitespace.getValue());
+        Word word = (Word) printable;
+        System.out.print(word.getValue());
     }
 }
