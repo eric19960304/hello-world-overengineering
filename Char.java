@@ -1,5 +1,3 @@
-package hello_world.printable;
-
 public class Char implements Printable {
     private char value;
 

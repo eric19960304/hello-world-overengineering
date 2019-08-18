@@ -1,4 +1,3 @@
-package hello_world.printable;
 import java.util.ArrayList;
 
 public class Word implements Printable {

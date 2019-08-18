@@ -1,5 +1,3 @@
-package hello_world.printable;
-
 public class Letter extends Char {
 
     public Letter(char value) throws Exception {
