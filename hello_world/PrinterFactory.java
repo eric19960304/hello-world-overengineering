@@ -3,15 +3,21 @@ package hello_world;
 import hello_world.printer.*;
 
 public class PrinterFactory {
-    public Printer getPrinter(String printerType) {
+    public enum PrinterType {
+        WHITESPACE,
+        WORD;
+    }
+
+    public Printer getPrinter(PrinterType printerType) {
         if (printerType == null) {
             return null;
         }
 
-        if (printerType.equalsIgnoreCase("Whitespace")) {
-            return SingletonWhitespacePrinter.getInstance().getWhitespacePrinter();
-        } else if (printerType.equalsIgnoreCase("Word")) {
-            return SingletonWordPrinter.getInstance().getWordPrinter();
+        switch (printerType) {
+            case WHITESPACE:
+                return SingletonWhitespacePrinter.getInstance().getWhitespacePrinter();
+            case WORD:
+                return SingletonWordPrinter.getInstance().getWordPrinter();
         }
 
         return null;

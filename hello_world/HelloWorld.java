@@ -12,14 +12,14 @@ public class HelloWorld {
         Printable newline = new Newline();
 
         PrinterFactory factory = new PrinterFactory();
-        Printer wPrinter = factory.getPrinter("word");
-        Printer wsPrinter = factory.getPrinter("Whitespace");
+        Printer whitespacePrinter = factory.getPrinter(PrinterFactory.PrinterType.WHITESPACE);
+        Printer wordPrinter = factory.getPrinter(PrinterFactory.PrinterType.WORD);
 
-        wPrinter.print(hello);
-        wsPrinter.print(comma);
-        wsPrinter.print(space);
-        wPrinter.print(world);
-        wsPrinter.print(newline);
+        wordPrinter.print(hello);
+        whitespacePrinter.print(comma);
+        whitespacePrinter.print(space);
+        wordPrinter.print(world);
+        whitespacePrinter.print(newline);
     }
 
 }
