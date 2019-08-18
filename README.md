@@ -8,17 +8,22 @@ For [the programmerhumor hackathon 2019](https://www.programmerhumor.org/Hackath
 
 2. Make the `java` command available in terminal.
 
-3. Run `javac HelloWorld.java` to compile the code.
+3. Run `javac ./hello_world/HelloWorld.java` to compile the code.
 
-4. Run `java HelloWorld` to execute the program.
+4. Run `java hello_world.HelloWorld` to execute the program.
 
-## Pattern Used
+(To recompile, run `find . -name "*.class" -type f -delete` (Linux/MacOS) `Get-ChildItem * -Include *.class -Recurse | Remove-Item` (Windows), then run `javac ./hello_world/HelloWorld.java`)
+
+## Practices / Pattern Used
+
+- [X] Polymorphism
+- [X] Exception Handling
+- [X] Factory Method
+- [X] Singleton
 
 - [ ] Abstract Factory
 - [ ] Builder
-- [X] Factory Method
 - [ ] Prototype
-- [ ] Singleton
 - [ ] Adapter
 - [ ] Bridge
 - [ ] Composite
