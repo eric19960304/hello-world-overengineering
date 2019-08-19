@@ -8,7 +8,7 @@ For [the programmerhumor hackathon 2019](https://www.programmerhumor.org/Hackath
 
 1. Install [Java SE JDK 8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) or above.
 
-2. Make the `java` command available in terminal.
+2. Make the `javac` and `java` commands available.
 
 3. Run `javac HelloWorld.java` to compile the code.
 
