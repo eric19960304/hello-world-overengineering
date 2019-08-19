@@ -1,4 +1,4 @@
-public class Comma extends Whitespace {
+public class Comma extends Punctuation {
 
     public Comma() throws Exception {
         super(',');

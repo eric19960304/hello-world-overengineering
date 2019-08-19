@@ -8,8 +8,8 @@ public class HelloWorld {
         // prepare printing contents
         PrintableFactory printableFactory = new PrintableFactory();
         List<PrintableType> types = Arrays.asList( 
-            PrintableType.HELLO, PrintableType.COMMA, 
-            PrintableType.SPACE, PrintableType.WORLD, PrintableType.NEWLINE );
+            PrintableType.HELLO, PrintableType.COMMA, PrintableType.SPACE,
+            PrintableType.WORLD, PrintableType.EXCLAMATION_MARK, PrintableType.NEWLINE );
         List<Printable> contents  = types.stream()
             .map(t -> printableFactory.getPrintable(t))
             .collect(Collectors.toList());
@@ -19,8 +19,8 @@ public class HelloWorld {
         for(Printable p : contents) {
             if (p instanceof Word) {
                 printer.addJob(new PrintWordCommand(p));
-            } else if (p instanceof Whitespace){
-                printer.addJob(new PrintWhitespaceCommand(p));
+            } else if (p instanceof Char){
+                printer.addJob(new PrintCharCommand(p));
             }
         }
 

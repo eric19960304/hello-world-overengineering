@@ -11,6 +11,8 @@ public class PrintableFactory {
                     return new Comma();
                 case SPACE:
                     return new Space();
+                case EXCLAMATION_MARK:
+                    return new ExclamationMark();
                 case NEWLINE:
                     return new Newline();
                 case HELLO:
